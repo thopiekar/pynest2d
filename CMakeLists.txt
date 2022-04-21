@@ -51,8 +51,6 @@ target_include_directories(pynest2d
         )
 
 find_package(Threads)
-find_package(clipper)
-find_package(NLopt)
 find_package(Boost)
 target_link_libraries(pynest2d INTERFACE Libnest2D::libnest2d Python::Python Threads::Threads clipper::clipper NLopt::nlopt boost::boost)
 
