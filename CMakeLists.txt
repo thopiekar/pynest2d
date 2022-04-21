@@ -52,7 +52,7 @@ target_include_directories(pynest2d
 
 find_package(Threads)
 find_package(Boost)
-target_link_libraries(pynest2d INTERFACE Libnest2D::libnest2d Python::Python Threads::Threads Clipper::Clipper NLopt::nlopt boost::boost)
+target_link_libraries(pynest2d INTERFACE Libnest2D::libnest2d Python::Python Threads::Threads Clipper::Clipper NLopt::nlopt Boost::boost)
 
 add_sip_module(pynest2d)
 if(Python_SITELIB_LOCAL)
